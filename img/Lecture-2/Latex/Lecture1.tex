@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+
+\begin{document}
+
+
+
+
+
+
+
+\text{Error (measures how far off each of our samples our prediction is)}\\\\
+
+
+$$E = \frac{1}{2N}\sum_i|(\hat{z}^{(i)}-z^{(i)})| =  \langle \frac{1}{2}|\hat{z}^{(i)}-z^{(i)}|  \rangle   $$
+
+\begin{tikzpicture}
+      \draw[->] (0,0) -- (6,0) node[right] {$w$};
+      \draw[->] (0,0) -- (0,4) node[above] {$E$};
+
+      \draw[scale=0.5,domain=0:10,smooth,variable=\x,red]  plot ({\x+2},{0.1*\x*\x-\x+5});
+      \draw[-] (3.5,0) -- (3.5,1.25) node[above] {$w^*$};
+      
+    \end{tikzpicture}
+
+calculate: $\frac{dE}{dw}:=0 \implies w^*$ \text{optimal }$w$\text{ where derivative is 0 as then curve is a minimum or maximum}\\\\
+
+\text{Linear Regression (batch algorithm)}\\\\
+
+
+$$\frac{dE}{dw}\langle \frac{1}{2}||\hat{z}^{(i)}-z^{(i)}|| \rangle = \langle \frac{dE}{dw}\frac{1}{2}( \hat{z}^{(i)}-z^{(i)})^2 | \rangle = \langle(\hat{z}^{(i)}-z^{(i)})\frac{d}{dw}\hat{z}^{(i)} \rangle $$
+$$ = \langle(\hat{z}^{(i)}-z^{(i)})x^{(i))} \rangle = \langle (w_1x^{(i)}-z^{(i)})x^{(i))} \rangle = 0$$
+$$ = \langle w_1x^{(i)2} \rangle - \langle z^{(i)}x^{(i))} \rangle = 0$$
+
+$$ w_1\langle x^{(i)2} \rangle = \langle z^{(i)}x^{(i))} \rangle $$
+
+$$ w_1 = \langle x^{(i)2} \rangle ^{-1} \langle z^{(i)} \rangle = w^*$$
+
+Or in multiple dimensions\\
+$$ w^* = \langle z^Tx \rangle \langle xx^T \rangle ^{-1}$$
+
+
+\end{document}

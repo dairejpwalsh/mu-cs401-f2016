@@ -6,12 +6,12 @@
  - Supervised
  - Unsupervised
  - Reinforcement Learning
- 
+
 [**Reinforcement Learning**](https://en.wikipedia.org/wiki/Reinforcement_learning) -> Very technically difficult
 
-        
+
 ![reinforcement learning diagram](http://www.mdpi.com/sensors/sensors-15-06668/article_deploy/html/images/sensors-15-06668-g002-1024.png)
-                    
+
 
 
 The **World** gives state and rewards (postive or negative) to the **Agent**.
@@ -39,24 +39,15 @@ _The objective is to maximize future rewards based on current actions_
 ##### Data
 
 input   ->  output
-    
+
 x<sup>i</sup> -> z<sup>(i)</sup> <br>
 . <br>
 . <br>
 x<sup>(m)</sup> -> z<sup>(i)</sup>
-    
-\vec{z} = f(x;w) = wx + b = w_{1}x + w_{0} = w_{1}x + \theta = [w_{0} w_{1}] \binom{1}{x}
 
+![Z prediction](img/Lecture-2/Zprediction.png)
 
 [_Gauss developed a method of finding the squared distance between the data points and the line_](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss)
 
 The objective is to minimize the sum squared error
-
-![min point](min.jpg)
-
-![linear regression derivative](linear_regression_derivative.jpg)
-
-
-
-
-    
+![linear regression derivative](img/Lecture-2/Linear Regression Equations.png)
