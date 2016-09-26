@@ -45,9 +45,9 @@ x<sup>i</sup> -> z<sup>(i)</sup> <br>
 . <br>
 x<sup>(m)</sup> -> z<sup>(i)</sup>
 
-![Z prediction](img/Lecture-2/Zprediction.png)
+![Z prediction](img/lecture-02/Zprediction.png)
 
 [_Gauss developed a method of finding the squared distance between the data points and the line_](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss)
 
 The objective is to minimize the sum squared error
-![linear regression derivative](img/Lecture-2/Linear Regression Equations.png)
+![linear regression derivative](img/lecture-02/Linear Regression Equations.png)
