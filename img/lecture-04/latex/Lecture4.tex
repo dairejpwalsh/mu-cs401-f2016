@@ -1,0 +1,37 @@
+w(t+1) = w(t)-\delta(\hat{z}-z)x
+
+w = \sum_t\alpha_t x(t)
+w= \sum_i\alpha_i x^{(i)}
+
+w \in \text{span(training set inputs)}\\\\
+
+wx^{(i)} > 0 \text{ if}\ z=+1 \\\\
+wx^{(i)} < 0 \text{ if}\ z=-1 \\\\
+       
+wz^{(i)}x^{(i)} \geq \epsilon \\\\
+
+\text{Perceptron learning rule and convergence theorem imply online linear programming solver}\\\\
+
+E = \langle (\hat{z}-z)^2 \rangle \\\\
+
+w* = argmin_w E
+
+\text{Perceptron: }\ \hat{z} = s(w \cdot x) \text{ where s is some smooth function such as atanh or sigmoid}\\\\
+
+\text{Naive gradient descent (batch)}\\\\
+
+w(t+1) = w(t) - \eta_t \nabla E(w(t)) \text{iterate}\\\\
+
+\text{iterated line search: }\ m_t = argmin_m E(w(t)-\eta \nabla E)\\\\
+
+\text{people usually choose} \eta \ \text{heuristically}\\\\
+
+E = \langle \nabla_w (\hat{z}-z)(\hat{z}-z) \rangle = \langle (\hat{z}-z) \nabla_w \hat{z} \rangle = \langle (\hat{z}-z)s^`(w \cdot x)x \ra
+
+
+
+\text{trapped in the subspace spanned by the inputs}\
+
+\text{Stochastic Gradient Descent: (SGD)}\
+
+w(t+1)=w(t)-\eta_t \nabla_w \hat{E}_t
