@@ -1,0 +1,75 @@
+
+x_i(t) \in \{-1, +1 \}
+
+
+w_i(1) = 1 \forall i
+
+
+\hat{z}(1) = sign(\sum_i x_i(0))
+
+
+w_i(2) = [ x_i(1) = z(1)] w_i(1)
+
+
+\hat{z}(2) = sign(\sum_i w_i(2) x_i(2))
+
+w_i(t+1) = [ x_i(t) = z(t)] w_i(t)
+
+\hat{z}(t) = sign(\sum_i w_i(t) x_i(t))
+
+L(t) = \# \text{ Losses on days 1...} t\\
+= \sum_{t'=1}^t[\hat{z}(t' = z(t)]
+
+
+\lim_{t\rightarrow\infty} L(t) \leq \log_2(n)
+
+
+
+w_i(t+1) =
+\left\{
+  \begin{array}{ll}
+    1  & \mbox{if } z(t) = x_i(t)\\
+    \alpha  & \mbox{if } z(t) \not= x_i(t)
+  \end{array}
+\right\}w_i(t)
+
+w_*(t) \geq \alpha^n \indent \forall t
+
+w(t) =\sum_i w_i(t)
+
+w \downarrow \frac{\alpha + 1}{2}
+
+
+w(1) = n
+
+w(t) \leq n ( \frac{\alpha +1}{2})^l
+
+w(t) \geq \alpha^m \indent \forall t
+
+
+
+n ( \frac{\alpha +1}{2})^l \geq w(t) \geq \alpha^m \indent \forall t
+
+
+l\log(\frac{\alpha +1}{2})) \geq m\log(\alpha) -\log(n)
+
+
+1 \leq \frac{ m\log(\alpha) - \log(n)}{\log(\frac{\alpha +1}{2})}
+
+w_i(t+1) = w_i(t) - \zeta\frac{\delta \hat{E}}{\delta w_i}
+
+E = \lambda\frac{1}{2}(w-w^*)^2 \indent w^* = 0 \text{ (just to make things easier)}
+
+w_i(t+1) = w_i(t) - \zeta\frac{\delta \hat{E}}{\delta w_i}\\
+=(1-\zeta\lambda)w(t)
+
+w_i(t) =(1-\zeta\lambda)^tw(0)
+
+|1-\zeta\lambda|<1
+
+-1< 1-\zeta\lambda <1
+
+
+-2 <-\zeta\lambda < 0\\
+0 < \zeta\lambda < 2\\
+0 < \zeta\lambda < \frac{2}{\lambda}

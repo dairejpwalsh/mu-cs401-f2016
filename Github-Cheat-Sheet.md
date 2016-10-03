@@ -63,9 +63,9 @@ Then we checkout our own
 ````
 git checkout master
 ````
-Then we merge the changes
+Then we merge the changes. This combines the changes we've made with the changes to Barak's repo.
 ````
-git checkout master
+git merge upstream/master
 ````
 
 If this is successful we can run the last three steps in the first part of this tutorial to push a new commit with our local changes  
