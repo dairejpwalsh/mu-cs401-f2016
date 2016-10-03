@@ -10,9 +10,9 @@
 Different flavours:
 - ~~batch algorithm~~ (no good, booooo)
 
-![Batch Algorithm Equation](Eq1.gif)
+![Batch Algorithm Equation](img/lecture-03/Eq1.gif)
 
-![Linear Equation](Eq2.gif)  
+![Linear Equation](img/lecture-03/Eq2.gif)  
 This becomes the linear equation above which we can solve directly using a linear system solver.
 So we have an (*n* * *n*) matrix which can be seen as an *n*-dimensional vector.
 
@@ -24,22 +24,22 @@ An example of an online algorithm:
 
 ##### Classification (vs. regression)
 Classification is different to regression.
-![Input Space](Eq3.gif)
+![Input Space](img/lecture-03/Eq3.gif)
 
 When do we use classification/regression?
 Medical diagnoses
 * some things are continuous numbers – regression
 * others are discrete (i.e. sex etc.) – classification
 
-![Output Space](Eq4.gif)
-* ![Regression](Eq5.gif)
-* ![Classification](Eq6.gif)
+![Output Space](img/lecture-03/Eq4.gif)
+* ![Regression](img/lecture-03/Eq5.gif)
+* ![Classification](img/lecture-03/Eq6.gif)
 
 The problem is that our linear regression/classification "box" does linear mappings. This is not always what we want; for instance sometimes we want non-linear patterns.
 
 For machine learning to be feasible the following space needs to be narrowed down:
-![Concept Space](Eq7.gif)
-![Weight Space](Eq8.gif)
+![Concept Space](img/lecture-03/Eq7.gif)
+![Weight Space](img/lecture-03/Eq8.gif)
 
 ### History Time! (or Rosenblatt's Perceptron)
 Frank Rosenblatt was friends with Marvin Minksy, both of whom were pioneers in AI. Their idea was to solve classification:
@@ -51,15 +51,15 @@ Frank Rosenblatt was friends with Marvin Minksy, both of whom were pioneers in A
     * Hardware – special purpose analog.
       * Knobs on the "w" box-machine – they wanted to twiddle the knobs as little as possible.
     * However, if the output is false yet the desired output is true – what to do?
-        * ![w-equation](Eq9.gif)
-        * ![w-sigma](Eq10.gif)
+        * ![w-equation](img/lecture-03/Eq9.gif)
+        * ![w-sigma](img/lecture-03/Eq10.gif)
     * In order to converge on the right answer we consider our input space as a Cartesian plane where *x*<sub>1</sub> is tracked on the *x*-axis and *x*<sub>2</sub> is tracked on the *y*-axis. Thus we get the following equation:
-        ![converging eq](Eq11.gif)
+        ![converging eq](img/lecture-03/Eq11.gif)
 
       * Intuition: using weight w we choose it such that *x*<sub>1</sub>, *x*<sub>2</sub> vectors dotted together are positive
 
   * Perceptron Learning Theorem:
-    * ![plt](Eq12.gif)
+    * ![plt](img/lecture-03/Eq12.gif)
     * Taking ome subset of the training set – if we learn from it we can get correct output every time with enough modifications to *w*.
     * A cautionary tale: tanks in the Cold War. Researchers looking to build a training set for a machine that would automatically identify tanks asked a military base to provide them with pictures of tanks. When running tests they got the machine to correctly identify tanks based on this training data. However they soon found that this was merely luck – the pictures they had been sent of tanks were taken in daylight so the machine had learned that all photos that were not in the daylight or slightly darker were photos of not-tanks.
 
