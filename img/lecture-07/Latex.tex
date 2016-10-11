@@ -1,0 +1,100 @@
+\Delta w(t) = w(t+1)-w(t) \\
+\Delta = -\zeta \nabla E\\
+\zeta < \frac{2}{\lambda_{max}}
+
+\lambda_1\text{ are eigenvalues of } H = \nabla^2 E
+
+\Delta w(t) = \alpha \nabla_w E -  \zeta\nabla E\\
+
+
+\sqrt{\frac{\lambda_{max}}{\lambda_{min}}}
+
+
+E = \frac{1}{m}\sum_p E_p = \langle E_p \rangle\\
+\nabla E =
+\begin{pmatrix}
+  \frac{\delta E}{\delta w_1}\\
+  .\\
+  .\\
+  \frac{\delta E}{\delta w_n}
+\end{pmatrix}\\
+\hat{z}^{(p)} = w\cdot x^{(p)} \text{ p pattern}\\
+E_p = \frac{1}{2}(\hat{z}^(p) - z^{(p)})\\
+\frac{\delta E_p}{\delta w_i} = (\hat{z}^{(p)} - z^{(p)})\frac{\delta\hat{z}^{(p)}}{\delta w_i} = (\hat{z}^{(p)} - z^{(p)})x_i^{(p)}\\
+\nabla E_p = (\hat{z}^{(p)} - z^{(p)})x^{(p)}
+
+
+
+\hat{z} = s(w\cdot x)\\
+
+
+\frac{\delta E_p}{\delta w_i} = (\hat{z} - z)\frac{\delta \hat{x}}{\delta w_i} = (\hat{z} - z)s'(w\cdot x)\frac{\delta(w\cdot x)}{\delta w_i}\\
+
+
+f'(x) = \frac{f(x+h)-f(x)}{h} + O(h)
+
+
+y = \sum w_ix_i
+
+\hat{z} = s(y)
+
+E = (\hat{z}-z)^2
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (10.7,-9.2) circle (3);
+\draw [black] (10.9,-45.3) circle (3);
+\draw [black] (22.3,-25.6) circle (3);
+\draw (22.3,-25.6) node {$+$};
+\draw [black] (34.6,-25.6) circle (3);
+\draw (34.6,-25.6) node {$s$};
+\draw [black] (49.2,-25.6) circle (3);
+\draw (49.2,-25.6) node {$-$};
+\draw [black] (64.6,-25.6) circle (3);
+\draw [black] (39.9,-42.5) circle (3);
+\draw [black] (4.3,-9.2) -- (7.7,-9.2);
+\draw (3.8,-9.2) node [left] {$w_1$};
+\fill [black] (7.7,-9.2) -- (6.9,-8.7) -- (6.9,-9.7);
+\draw [black] (4.5,-45.3) -- (7.9,-45.3);
+\draw (4,-45.3) node [left] {$w_n$};
+\fill [black] (7.9,-45.3) -- (7.1,-44.8) -- (7.1,-45.8);
+\draw [black] (13.6,-9.947) arc (69.35214:1.1927:13.848);
+\fill [black] (22.56,-22.62) -- (23.04,-21.81) -- (22.05,-21.83);
+\draw (20.62,-13.54) node [right] {$w_1x_1$};
+\draw [black] (22.119,-28.592) arc (-7.28875:-52.82548:22.479);
+\fill [black] (22.12,-28.59) -- (21.52,-29.32) -- (22.51,-29.45);
+\draw (19.93,-38.23) node [right] {$w_nx_n$};
+\draw [black] (24.712,-23.843) arc (115.99731:64.00269:8.527);
+\fill [black] (32.19,-23.84) -- (31.69,-23.04) -- (31.25,-23.94);
+\draw [black] (37.068,-23.911) arc (116.46415:63.53585:10.843);
+\fill [black] (46.73,-23.91) -- (46.24,-23.11) -- (45.79,-24);
+\draw (41.9,-22.27) node [above] {$\hat{z}$};
+\draw [black] (51.803,-24.121) arc (113.00986:66.99014:13.04);
+\fill [black] (62,-24.12) -- (61.46,-23.35) -- (61.07,-24.27);
+\draw (56.9,-22.58) node [above] {$x^2$};
+\draw [black] (61.995,-27.075) arc (-67.04896:-112.95104:13.067);
+\fill [black] (51.8,-27.08) -- (52.35,-27.85) -- (52.74,-26.93);
+\draw (56.9,-28.61) node [below] {$\hat{v}=\frac{\delta E}{\delta v}$};
+\draw [black] (41.35,-39.87) -- (47.75,-28.23);
+\fill [black] (47.75,-28.23) -- (46.93,-28.69) -- (47.81,-29.17);
+\draw (45.22,-35.24) node [right] {$z$};
+\draw [black] (46.448,-26.783) arc (-72.44153:-107.55847:15.077);
+\fill [black] (37.35,-26.78) -- (37.96,-27.5) -- (38.27,-26.55);
+\draw (41.9,-27.99) node [below] {$\bar{z}$};
+\draw [black] (32.063,-27.177) arc (-67.31581:-112.68419:9.368);
+\fill [black] (24.84,-27.18) -- (25.38,-27.95) -- (25.77,-27.02);
+\draw (28.45,-28.4) node [below] {$s'$};
+\draw [black] (19.623,-24.253) arc (-121.33234:-168.12281:18.632);
+\fill [black] (11.08,-12.17) -- (10.75,-13.06) -- (11.73,-12.85);
+\draw (13.51,-20.47) node [left] {$\times\mbox{ }x_1$};
+\draw [black] (10.913,-42.303) arc (-184.4679:-235.64633:20.328);
+\fill [black] (10.91,-42.3) -- (11.47,-41.54) -- (10.48,-41.47);
+\draw (12.93,-32.47) node [left] {$\times\mbox{ }x_n$};
+\end{tikzpicture}
+\end{center}
+
+
+%% made using http://madebyevan.com/fsm/
