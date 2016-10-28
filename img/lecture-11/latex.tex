@@ -1,0 +1,43 @@
+
+
+E = \sum_i\sum_j\frac{1}{2}||w_i-x^{(i)}||^2
+
+
+E = \sum_i\min_j\frac{1}{2}||w_i-x^{(i)}||^2
+
+z_{i,j} =
+\left\{
+  \begin{array}{ll}
+    1  & \mbox{if } \text{ point closer to } w_j \text{ than any other mean} \\
+    -x & \text{ else}
+  \end{array}
+\right.\\
+\big[ j = argmin_i || w_j-x^{(i)}||^2 \big]
+
+
+
+w_j \leftarrow \frac{\sum_i z_{i,j}w^{(i)}}{\sum_i z_{i,j}}
+
+\forall i \sum_j z_{i,j} = 1
+
+g(x; \bar{x}, \sigma^2) = \frac{1}{\sqrt{2\pi} \sigma} e^{-\frac{(x-\bar{x})^2}{2\sigma^2}}
+
+
+
+P(\alpha) \propto e^\frac{-E\alpha}{T}
+
+
+P(\alpha) \propto \frac{1}{z}e^\frac{-E\alpha}{T}
+
+z = E^\frac{-E\alpha}{T}
+
+E =  (x-\bar{x})^2
+
+
+p(x) = w_AP_A(x) + w_BP_B(x)\\
+w_A, w_b \geq 0\\
+w_A + w_B = 1
+
+
+\max_j P(x | w)\\
+\sum_i \log P(x^{(i)} | w)
