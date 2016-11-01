@@ -34,7 +34,7 @@ We now get:
 
 We are trying to get as close as possible to the optimum point, i.e. zero. (Converge on 0) As we apply the above formulas we need to take steps of appropriate size towards 0. The graph below should help to visualise movement towards the optimum point:
  
-Graph1: ![Alt](img\lecture-06\Lecture6-Image1.jpg "Graph1")
+Graph1: ![Alt](\img\lecture-06\Lecture6-Image1.jpg "Graph1")
  
 ####**So For Instance:**
 
@@ -42,7 +42,7 @@ Dimension: w = n > 1
 
 The graph below represents a valley, in reaching w* we would be reaching the optimum point:
 
-Graph2: ![Alt](img\lecture-06\Lecture6-Image2.jpg "Graph1")
+Graph2: ![Alt](\img\lecture-06\Lecture6-Image2.jpg "Graph1")
 
 We have the same gradient formula as above:
 
@@ -70,7 +70,7 @@ Series Expansion:
 
 Consider the same graph again, with different labels:
  
-Graph3: ![Alt](img\lecture-06\Lecture6-Image3.jpg "Graph3")
+Graph3: ![Alt](\img\lecture-06\Lecture6-Image3.jpg "Graph3")
 
 Let c1 and c2 be Eigen vectors.
 	
