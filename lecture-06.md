@@ -34,7 +34,7 @@ We now get:
 
 We are trying to get as close as possible to the optimum point, i.e. zero. (Converge on 0) As we apply the above formulas we need to take steps of appropriate size towards 0. The graph below should help to visualise movement towards the optimum point:
  
-Graph1: ![Alt](\img\lecture-06\Lecture6-Image1.jpg "Graph1")
+Graph1: ![graph1](/img/lecture-06/Lecture6-Image1.jpg)
  
 ####**So For Instance:**
 
