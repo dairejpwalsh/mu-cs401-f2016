@@ -42,7 +42,7 @@ Dimension: w = n > 1
 
 The graph below represents a valley, in reaching w* we would be reaching the optimum point:
 
-Graph2: ![Alt](\img\lecture-06\Lecture6-Image2.jpg "Graph1")
+Graph2: ![graph2](/img/lecture-06/Lecture6-Image2.jpg)
 
 We have the same gradient formula as above:
 
@@ -70,7 +70,7 @@ Series Expansion:
 
 Consider the same graph again, with different labels:
  
-Graph3: ![Alt](\img\lecture-06\Lecture6-Image3.jpg "Graph3")
+Graph3: ![graph3](/img/lecture-06/Lecture6-Image3.jpg)
 
 Let c1 and c2 be Eigen vectors.
 	
