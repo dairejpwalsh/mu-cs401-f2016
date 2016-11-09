@@ -29,4 +29,4 @@ z = log(e^x(1+e^(y-x)))
 
 
   
-[Hidden Markov Models Cheat Sheet](http://www.bcl.hamilton.ie/~barak/misc/hmm.pdf)
+[Hidden Markov Models Cheat Sheet](http://barak.pearlmutter.net/~barak/misc/hmm.pdf)
