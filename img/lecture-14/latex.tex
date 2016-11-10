@@ -1,0 +1,29 @@
+P(\text{lib} | \text{Test = positive}) = \frac{ P(\text{Test = pos} | \text{ Lib})\times P(\text{Lib})}{P(\text{Test = pos})}\\
+=\frac{0.95\times \frac{1}{50}} {P(\text{Text = pos}|\text{Lib})P(\text{Lib}) + P\text{Test = pos}|\overline{\text{Lib}})P(\overline{\text{Lib}})}\\\\
+P(A) = \sum_b P(A|B=b)P(B=b)\\
+=\frac{\frac{19}{20} \times\frac{1}{50}} {\frac{19}{20} \times\frac{1}{50} + \frac{1}{20} \times\frac{49}{50}}\\
+\text{multiply above and below by 50}\\
+ = \frac{\frac{19}{20}} {\frac{19}{20} + \frac{1}{20}49} = \frac{19}{19+49} = \frac{19}{68}
+
+
+
+ P(q(t) | q(t-1)) = a_{i,j}\\
+ P(o(t) = k | q(t) = i) = b_i(k)\\
+ P(\vec{o} | \lambda )\text{is implicit in the below equations}\\
+ \alpha_t(i) = P(o(1),o(2), ..., o(t), q(t) = i)\\
+ p(o(1),...,o(t)) = \sum_i\alpha_t(i)\indent \indent p(\vec{o}) = \sum_i\alpha_T(i)\\
+ \alpha_1(i) = P(o(1), q(1)=i)\\
+ \indent = P(q(1) = i)P(o(1) | q(1) = i)\\
+ = \text{ probability of picking q(1) as initial state} \times b_i(q(i))\\
+ \alpha_t(i) = P(o(1), ..., o(t-1), o(t), q(t)=i)\\
+ =\sum_i P(o(1),...,o(t-1),o(t),q(t)=i | q(t-1)=j)P(q(t-1) = j)\\
+ =\sum_j \alpha_{t-1}(j)a_{ij}b_i(o(t))\\
+ \text{Where}\\
+ a_{ij} = P(q(t)=i | q(t-1) = j)\\
+ b_i(o(t) = P(o(t) | q(t)=i)
+
+
+ \beta_t(i) = P(o(t-1), o(t+2),...,o(T) | q(t) = i)\\
+=\sum a_{ji}\beta_{t+1}(j)b_j(o(t+1))\\
+\beta_T(i) = 1\\
+\sum_i\alpha_i(t)\beta_i(t) = P(\vec{o})\\
