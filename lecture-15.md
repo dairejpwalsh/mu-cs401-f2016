@@ -57,8 +57,55 @@ parameters inside λ:
 
 Application:
 ------------
+
+Server System Calls:
+
 There exists a sequence of system calls in a server.
 If it is being attacked, the sequence of calls becomes unusual.
 Kernel is run normally with an estimate of its HMM.
 Kernel recognises if the HMM changes -> Notifies human/restarts server because it believes it is being attacked if the HMM is changed.
+
+Speech Recognition:
+
+If a raw waveform is received from a aeroplane cockpit - one microphone, two pilots. The two pilots can be talking at the same time in this waveform so we need a way of figuring out what each of them is saying. 
+
+If we have two different HMM's, HMM1 AND HMM2 representing the speech of pilot1 and pilot2, then we can create a CrossProduct HMM where each state of this HMM is a pair of states from HMM1 AND HMM2. 
+
+CPstate = (state(hmm1),state(hmm2))  
+
+Graphical Model - graph theory(nodes and arrows)
+---------------
+General framework for probability distributions
+
+
+HMM1  q(1) -> q(2) -> q(3) -> .... -> q(T)
+
+		↓		↓		↓				↓
+		
+	  o(1) -> o(2) -> o(3) -> .... -> o(T)
+		
+		↓		↓		↓				↓
+
+	  *o(1)*->*o(2)*->*o(3)*-> .... ->*o(T)*	--> Output of combined HMM's
+
+		↑		↑		↑				↑
+	
+	  o(1) -> o(2) -> o(3) -> .... -> o(T)
+
+		↑		↑		↑				↑
+		
+HMM2  q(1) -> q(2) -> q(3) -> .... -> q(T)
+		
+
+
+
+
+
+
+
+
+
+
+
+
 
