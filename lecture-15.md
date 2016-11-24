@@ -95,7 +95,32 @@ HMM1
 	  o(1) -> o(2) -> o(3) -> .... -> o(T)
 
 		↑		↑		↑				↑
-HMM2  q(1) -> q(2) -> q(3) -> .... -> q(T)
+		
+      q(1) -> q(2) -> q(3) -> .... -> q(T)
+	  
+HMM2
+
+
+
+
+
+Bayes
+------
+
+Rain --> GrassWet <-- Sprinklers
+
+In the morning the grass can be wet as a result of two things. It may have rained last night, and/or the sprinklers watered the grass.
+
+The probability that it rained is 1/20. The prob that the sprinklers were on is 1/5.	
+
+If we have a definite observation that the grass was wet then Rain and Sprinklers are no longer independent.
+
+Knowing the grass is wet sets an anti-correlation between Rain and Sprinklers.
+
+Closest solution: Directed graphical model to undirected graphical model. Each node in graph now had a table of energy. Look up all energies and add together.
+
+Undirected graphical model - mapping from states of graph into local terms.  
+
 		
 
 
