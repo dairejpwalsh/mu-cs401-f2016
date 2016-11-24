@@ -79,7 +79,6 @@ General framework for probability distributions
 
 
 HMM1  q(1) -> q(2) -> q(3) -> .... -> q(T)
-
 		↓		↓		↓				↓
 		
 	  o(1) -> o(2) -> o(3) -> .... -> o(T)
@@ -93,7 +92,6 @@ HMM1  q(1) -> q(2) -> q(3) -> .... -> q(T)
 	  o(1) -> o(2) -> o(3) -> .... -> o(T)
 
 		↑		↑		↑				↑
-		
 HMM2  q(1) -> q(2) -> q(3) -> .... -> q(T)
 		
 
