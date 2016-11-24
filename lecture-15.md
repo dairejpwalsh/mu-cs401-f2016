@@ -27,18 +27,18 @@ Problem (2):
 ------------
 Max q' P(q'|o',λ) -> the sequence of states most likely to go through given outputs. 								
 			https://en.wikipedia.org/wiki/Viterbi_algorithm
-	Used in speech recognition
+Used in speech recognition
 
 α(t) = P(o(1),o(2)... o(t), q(t)=i|λ)
+
 ß(t) = P(o(t+1)... o(T)|q(t) = i, λ)
 
 Find i that maximises:
-max αi(t).ßi(t) -->
- i 
+
+max i  αi(t).ßi(t) --> 
  
-P(o',q(t)=i|λ)
-______________ = P(q(t) = i|o',λ)
-	P(o')
+(P(o',q(t)=i|λ))/(P(o')) = P(q(t) = i|o',λ)
+
 	
 Problem (3): 
 ------------
@@ -47,9 +47,10 @@ max λ P(λ|o') -> the parameters of a hidden markov model given output sequence
 Find λhat such that P(λ'|o')>=P(λ|o')   (equality only holding at local max)
 
 parameters inside λ:
-λ = (A, B, π) where A is transition probabilities
-					B is output probabilities
-					π is distribution of start states
+
+λ = (A, B, π) where A is transition probabilities,
+					B is output probabilities,
+					π is distribution of start states.
 
 					
 αi(t).ßj(t+1).bj(o(t+1)) -> Probability of making a transition from i at time t to j at time t+1 and producing correct output sequence.
