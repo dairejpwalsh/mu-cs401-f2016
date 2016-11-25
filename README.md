@@ -23,3 +23,5 @@ Instructional Materials
 * https://github.com/hangtwenty/dive-into-machine-learning
 * Curated list of Reinforcement Learning Resources: http://aikorea.org/awesome-rl/
 * Curated list of Machine Learning Tutorials: https://github.com/ujjwalkarn/Machine-Learning-Tutorials/blob/master/README.md
+* Nice demos of various optimization techniques:
+  http://www.benfrederickson.com/numerical-optimization/
