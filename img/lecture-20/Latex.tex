@@ -1,0 +1,125 @@
+E = \langle (\hat{z}-z)^2\rangle
+
+
+
+
+
+\documentclass[12pt]{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (9.5,-16.2) circle (3);
+\draw (9.5,-16.2) node {$Mon$};
+\draw [black] (18.4,-16.3) circle (3);
+\draw (18.4,-16.3) node {$Tue$};
+\draw [black] (28.2,-16.3) circle (3);
+\draw (28.2,-16.3) node {$Wed$};
+\draw [black] (38,-16.3) circle (3);
+\draw (38,-16.3) node {$Thur$};
+\draw [black] (47.1,-16.3) circle (3);
+\draw (47.1,-16.3) node {$Fri$};
+\draw [black] (67.5,-29.5) circle (3);
+\draw (67.5,-29.5) node {$Sat$};
+\draw [black] (67.5,-46.7) circle (3);
+\draw (67.5,-46.7) node {$rain?$};
+\draw [black] (18.4,-49.9) circle (3);
+\draw (18.4,-49.9) node {$Predict$};
+\draw [black] (22.7,-41) circle (3);
+\draw (22.7,-41) node {$Predict$};
+\draw [black] (29.5,-33.9) circle (3);
+\draw (29.5,-33.9) node {$Predict$};
+\draw [black] (38,-29.5) circle (3);
+\draw (38,-29.5) node {$Predict$};
+\draw [black] (49,-28.1) circle (3);
+\draw (49,-28.1) node {$Predict$};
+\draw [black] (58.4,-42.3) circle (3);
+\draw [black] (10.27,-19.1) -- (17.63,-47);
+\fill [black] (17.63,-47) -- (17.91,-46.1) -- (16.95,-46.35);
+\draw [black] (18.91,-19.26) -- (22.19,-38.04);
+\fill [black] (22.19,-38.04) -- (22.54,-37.17) -- (21.56,-37.34);
+\draw [black] (28.42,-19.29) -- (29.28,-30.91);
+\fill [black] (29.28,-30.91) -- (29.72,-30.07) -- (28.72,-30.15);
+\draw [black] (38,-19.3) -- (38,-26.5);
+\fill [black] (38,-26.5) -- (38.5,-25.7) -- (37.5,-25.7);
+\draw [black] (47.58,-19.26) -- (48.52,-25.14);
+\fill [black] (48.52,-25.14) -- (48.89,-24.27) -- (47.9,-24.43);
+\draw [black] (50.66,-30.6) -- (56.74,-39.8);
+\fill [black] (56.74,-39.8) -- (56.72,-38.86) -- (55.89,-39.41);
+\draw [black] (40.54,-31.09) -- (55.86,-40.71);
+\fill [black] (55.86,-40.71) -- (55.45,-39.86) -- (54.92,-40.7);
+\draw [black] (32.38,-34.74) -- (55.52,-41.46);
+\fill [black] (55.52,-41.46) -- (54.89,-40.76) -- (54.61,-41.72);
+\draw [black] (25.7,-41.11) -- (55.4,-42.19);
+\fill [black] (55.4,-42.19) -- (54.62,-41.66) -- (54.58,-42.66);
+\draw [black] (21.35,-49.34) -- (55.45,-42.86);
+\fill [black] (55.45,-42.86) -- (54.57,-42.52) -- (54.76,-43.5);
+\draw [black] (61.1,-43.61) -- (64.8,-45.39);
+\fill [black] (64.8,-45.39) -- (64.3,-44.6) -- (63.86,-45.5);
+\end{tikzpicture}
+\end{center}
+
+\end{document}
+
+
+E = \sum_{t\geq 1}(\hat{z_t}-\hat{z_{t-1}})^2 + \hat{z_0}
+
+
+\documentclass[12pt]{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (8.2,-11.3) circle (3);
+\draw [black] (32.1,-6.8) circle (3);
+\draw [black] (9.3,-29.9) circle (3);
+\draw [black] (33.5,-26.2) circle (3);
+\draw [black] (52.5,-13.1) circle (3);
+\draw [black] (51.1,-28.9) circle (3);
+\draw [black] (72.2,-11.8) circle (3);
+\draw [black] (69.3,-26.6) circle (3);
+\draw [black] (11.15,-10.74) -- (29.15,-7.36);
+\fill [black] (29.15,-7.36) -- (28.27,-7.01) -- (28.46,-7.99);
+\draw (19.24,-8.39) node [above] {$0.7$};
+\draw [black] (8.38,-14.29) -- (9.12,-26.91);
+\fill [black] (9.12,-26.91) -- (9.57,-26.08) -- (8.58,-26.14);
+\draw (8.16,-20.63) node [left] {$0.3$};
+\draw [black] (32.32,-9.79) -- (33.28,-23.21);
+\fill [black] (33.28,-23.21) -- (33.73,-22.37) -- (32.73,-22.45);
+\draw (32.2,-16.55) node [left] {$0.7$};
+\draw [black] (12.27,-29.45) -- (30.53,-26.65);
+\fill [black] (30.53,-26.65) -- (29.67,-26.28) -- (29.82,-27.27);
+\draw (22.07,-28.71) node [below] {$0.6$};
+\draw [black] (34.97,-7.69) -- (49.63,-12.21);
+\fill [black] (49.63,-12.21) -- (49.02,-11.5) -- (48.72,-12.46);
+\draw (43.79,-9.37) node [above] {$0.3$};
+\draw [black] (36.032,-24.606) arc (115.00887:47.54774:11.961);
+\fill [black] (49.16,-26.62) -- (48.91,-25.71) -- (48.23,-26.45);
+\draw (43.58,-22.96) node [above] {$0.4$};
+\draw [black] (48.698,-30.682) arc (-61.13884:-136.30456:11.147);
+\fill [black] (35.26,-28.62) -- (35.45,-29.54) -- (36.17,-28.85);
+\draw (40.95,-32.6) node [below] {$0.8$};
+\draw [black] (51.36,-25.91) -- (52.24,-16.09);
+\fill [black] (52.24,-16.09) -- (51.67,-16.84) -- (52.66,-16.93);
+\draw (52.43,-21.07) node [right] {$0.2$};
+\draw [black] (55.49,-12.9) -- (69.21,-12);
+\fill [black] (69.21,-12) -- (68.38,-11.55) -- (68.44,-12.55);
+\draw (62.5,-13.06) node [below] {$0.9$};
+\draw [black] (54.84,-14.98) -- (66.96,-24.72);
+\fill [black] (66.96,-24.72) -- (66.65,-23.83) -- (66.02,-24.61);
+\draw (62.66,-19.36) node [above] {$0.1$};
+\end{tikzpicture}
+\end{center}
+
+\end{document}
+
+
+\text{Amortised reward } R(t) = \sum_{\tau = 0}^\infty \alpha^\tau r(t+\tau) \indent\indent 0<\alpha < 1\\
+\text{exp amortised reward } R(t) = \langle \sum_{\tau = 0}^\infty \alpha^\tau r(t+\tau) \rangle \\
+r(t)+\alpha r(t+1)+\cdot\cdot\cdot  = r(t) + \alpha (r(t+1) + \alpha r(t+2) + \cdot\cdot\cdot ) = r(t) + \alpha R(t+1)
