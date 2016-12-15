@@ -2,7 +2,7 @@
 
 Throughout the semester, we have learned various algorithms used in Machine Learning. Real Systems are a combination of such algorithms.
 
-- ## ImageNet : 2012 Deep convolutional neural network (Alexnet)
+## ImageNet : 2012 Deep convolutional neural network (Alexnet)
 
 ImageNet is a Compute Vision based project which aims to create a database of images with correct annotations. They run an annual contest, where different systems compete to classify and detect objects in images.
 
@@ -34,7 +34,7 @@ https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutiona
 
 
 
-- ## Fooling Neural Networks
+## Fooling Neural Networks
 
 Such a neural network can be fooled by creating abstract images that the neural network thinks are in the classification but they are not- Reverse gradient descend
 (use image space instead of input space)
@@ -48,7 +48,7 @@ Check links below for examples of such generated images
 http://www.evolvingai.org/fooling
 http://www.evolvingai.org/files/DNNsEasilyFooled_cvpr15.pdf
 
-- ## Possible Solution: Generative models
+## Possible Solution: Generative models
 
 Setup of the game:
 The generative model take in true images as their training set.
