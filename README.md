@@ -25,3 +25,4 @@ Instructional Materials
 * Curated list of Machine Learning Tutorials: https://github.com/ujjwalkarn/Machine-Learning-Tutorials/blob/master/README.md
 * Nice demos of various optimization techniques:
   http://www.benfrederickson.com/numerical-optimization/
+* Nice deep learning tutorial: http://course.fast.ai/
