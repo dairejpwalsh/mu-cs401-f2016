@@ -26,3 +26,4 @@ Instructional Materials
 * Nice demos of various optimization techniques:
   http://www.benfrederickson.com/numerical-optimization/
 * Nice deep learning tutorial: http://course.fast.ai/
+* Another deep learning guide: http://yerevann.com/a-guide-to-deep-learning/
