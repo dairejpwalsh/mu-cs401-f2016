@@ -27,3 +27,4 @@ Instructional Materials
   http://www.benfrederickson.com/numerical-optimization/
 * Nice deep learning tutorial: http://course.fast.ai/
 * Another deep learning guide: http://yerevann.com/a-guide-to-deep-learning/
+* Tutorial on Deep Unsupervised Learning by Russ Salakhutdinov, [slides]( http://www.cs.cmu.edu/~rsalakhu/talk_unsup.pdf ) [video]( https://www.youtube.com/watch?v=rK6bchqeaN8 )
