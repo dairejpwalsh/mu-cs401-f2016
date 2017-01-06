@@ -28,3 +28,4 @@ Instructional Materials
 * Nice deep learning tutorial: http://course.fast.ai/
 * Another deep learning guide: http://yerevann.com/a-guide-to-deep-learning/
 * Tutorial on Deep Unsupervised Learning by Russ Salakhutdinov, [slides]( http://www.cs.cmu.edu/~rsalakhu/talk_unsup.pdf ) [video]( https://www.youtube.com/watch?v=rK6bchqeaN8 )
+* [Getting started with Machine learning on Linux with Python 3 and Scikit-learn]( https://techarena51.com/index.php/getting-started-machine-learning-linux-python-3-scikit-learn/ )
