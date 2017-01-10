@@ -13,7 +13,7 @@ If both feet are either foward or back together than it will be determined that 
 If one foot is foward and the other foot is behind the less likely a person will fall.
 
 ## Linear Discriminators 
-With a vector x against multiple vectors, the angles between these vectors is some Theta Î of which
+With a vector x against multiple vectors, the angles between these vectors is some Theta ÃŽ of which
 we obtain the final output Sigma.
 To which they are only two types of Sigma, Hard and Soft.
 ![Hard and Soft Sigma](/img/lecture-08/Sigma.png)  
@@ -68,13 +68,13 @@ Extrapolation - hard
 * An approach to detecting Cancer cells
 * Gain skin cells, stain them, Then we can detect a cancer cell
 * However cells will possibly develop into cancer cells.
-* Previous Pep smear screenings were used to see tge change from non-cancer to cancer cells
-* Machine Learning ttechniques were used to categorise these cells - didnt work
+* Previous Pep smear screenings were used to see the change from non-cancer to cancer cells
+* Machine Learning techniques were used to categorise these cells - didnt work
 * New approach was to scan cells
 * Give the cell a score 
-* Then give them to human technition based on score 
-* Human technition can now more easily detect more potentail treats and discard the faulty cells easily that passed
-* Combination of both machine learning and human intution needed to reduce problem
+* Then give them to human technician based on score 
+* Human technician can now more easily detect more potential treats and discard the faulty cells easily that passed
+* Combination of both machine learning and human intuition needed to reduce problem
 
 ## Recurent Nueral Network 
 A recurrent neural network (RNN) is a class of artificial neural network where connections between units 
@@ -83,7 +83,7 @@ form a directed cycle. This creates an internal state of the network which allow
 ![RNN Handwriting generator](/img/lecture-08/rnn.jpg)
 
 RNN Handwriting generator
-The vector x us given the data set s where s is the x,y coordinates of the position of the pen.
+The vector x is given the data set s where s is the x,y coordinates of the position of the pen.
 After each iteration fo the new data set it takes a weighted average and produces the output O
 The unfolding of this process is done recursively shown in the diagram. (W -> s(t) -> s(t+1))
 
